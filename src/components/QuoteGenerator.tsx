@@ -92,7 +92,7 @@ const QuoteGenerator = () => {
           <div className="bg-gradient-header text-primary-foreground p-6 rounded-lg mb-8">
             <div className="flex justify-between items-center">
               <div>
-                <h1 className="text-3xl font-bold mb-2">COTIZACIÓN</h1>
+                <h1 className="text-3xl font-bold mb-2">COTIZACIÓN - Test</h1>
                 <p className="text-lg opacity-90">UTPL - Universidad Técnica Particular de Loja</p>
               </div>
               <div className="text-right">
