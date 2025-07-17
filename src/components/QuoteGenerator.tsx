@@ -92,7 +92,7 @@ const QuoteGenerator = () => {
           <div className="bg-gradient-header text-primary-foreground p-6 rounded-lg mb-8">
             <div className="flex justify-between items-center">
               <div>
-                <h1 className="text-3xl font-bold mb-2">COTIZACIÓN - Prueba</h1>
+                <h1 className="text-3xl font-bold mb-2">COTIZACIÓN - Bootcamp Presencial Quito</h1>
                 <p className="text-lg opacity-90">UTPL - Universidad Técnica Particular de Loja</p>
               </div>
               <div className="text-right">
@@ -144,22 +144,22 @@ const QuoteGenerator = () => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-border">
-                    <td className="py-4 text-foreground">Bootcamp UTPL (Virtual)</td>
+                    <td className="py-4 text-foreground">Bootcamp UTPL (Presencial)</td>
                     <td className="text-center py-4 text-muted-foreground">25 participantes máx.</td>
-                    <td className="text-right py-4 text-foreground">$ 1,290</td>
-                    <td className="text-right py-4 text-foreground">$ 1,290</td>
+                    <td className="text-right py-4 text-foreground">$ 1,590</td>
+                    <td className="text-right py-4 text-foreground">$ 1,590</td>
                   </tr>
                   <tr className="border-b border-border">
                     <td className="py-4 text-success font-medium">Descuento Especial</td>
                     <td className="text-center py-4"></td>
-                    <td className="text-right py-4 text-success">–$ 390</td>
-                    <td className="text-right py-4 text-success">–$ 390</td>
+                    <td className="text-right py-4 text-success">–$ 490</td>
+                    <td className="text-right py-4 text-success">–$ 490</td>
                   </tr>
                 </tbody>
                 <tfoot>
                   <tr className="bg-primary-light">
                     <td className="py-4 font-bold text-primary" colSpan={3}>Total a Pagar</td>
-                    <td className="text-right py-4 font-bold text-2xl text-primary">$ 900</td>
+                    <td className="text-right py-4 font-bold text-2xl text-primary">$ 1,100</td>
                   </tr>
                 </tfoot>
               </table>
@@ -191,7 +191,7 @@ const QuoteGenerator = () => {
           {/* Contact Information */}
           <div className="bg-accent p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-4 text-primary">Contacto Skilt</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
                 <div>
@@ -208,17 +208,106 @@ const QuoteGenerator = () => {
                   <div className="text-primary font-medium">skilt.io</div>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 bg-primary rounded flex items-center justify-center">
-                  <div className="w-2 h-2 bg-primary-foreground rounded"></div>
+            </div>
+          </div>
+
+          {/* Organizers and Partners Section */}
+          <section className="w-full py-6 md:py-8 bg-white border-t border-gray-100">
+            <div>
+              <div className="text-center mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                  Respaldado por líderes del ecosistema
+                </h2>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  Una iniciativa que cuenta con el apoyo de las principales organizaciones del sector tecnológico y
+                  financiero
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-8 p-8 flex-wrap justify-center">
+                {/* Organizado por */}
+                <div className="text-center w-full">
+                  <h3 className="text-lg font-semibold text-gray-700">Organizado por</h3>
+                  <div className="flex justify-center">
+                    <a className="flex items-center justify-center w-96 h-48" href="#">
+                      <img
+                        src="/estudio-logos/skilt.png"
+                        alt="Skilt Logo"
+                        width={120}
+                        height={60}
+                      />
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <div className="font-medium text-foreground">Socios Clave</div>
-                  <div className="text-muted-foreground text-sm">Partners tecnológicos</div>
+
+                {/* Auspicia */}
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-gray-700">Auspicia</h3>
+                  <div className="flex justify-center">
+                    <img
+                      src="/estudio-logos/kudert.png"
+                      alt="Kudert Logo"
+                      width={120}
+                      height={60}
+                    />
+                  </div>
+                </div>
+
+                {/* Miembros de */}
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-gray-700">Miembros de</h3>
+                  <div className="flex justify-center">
+                    <img
+                      src="/estudio-logos/citec.png"
+                      alt="CITEC Logo"
+                      width={120}
+                      height={60}
+                    />
+                  </div>
+                </div>
+
+                {/* Impulsados por */}
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-gray-700">Impulsados por</h3>
+                  <div className="flex justify-center">
+                    <img
+                      src="/estudio-logos/conquito.png"
+                      alt="Conquito Logo"
+                      width={120}
+                      height={60}
+                    />
+                  </div>
+                </div>
+
+                {/* Partners */}
+                <div className="text-center w-full">
+                  <h3 className="text-lg font-semibold text-gray-700">Partners</h3>
+                  <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <img
+                      src="/estudio-logos/nest-lab.png"
+                      alt="HR Tech Logo"
+                      width={120}
+                      height={60}
+                    />
+                    <img
+                      src="/estudio-logos/startup-grind.png"
+                      alt="Startupgrind Logo"
+                      width={120}
+                      height={60}
+                    />
+                  </div>
+                  <div className="flex justify-center">
+                    <img
+                      src="/estudio-logos/hr-tech.png"
+                      alt="HR Tech Logo"
+                      width={120}
+                      height={60}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           {/* Footer */}
           <div className="mt-8 pt-6 border-t border-border text-center">
